@@ -1,5 +1,5 @@
-import {Plugin, SettingsTypes} from "@highlite/core";
-import { PanelManager } from "@highlite/core";
+import {Plugin, SettingsTypes} from "@ryelite/core";
+import { PanelManager } from "@ryelite/core";
 import ExampleHTML from "../resources/html/html.html";
 import ExampleCSS from "../resources/css/base.css";
 import ExampleImage from "../resources/images/icon.png";
