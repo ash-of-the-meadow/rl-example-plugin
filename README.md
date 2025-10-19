@@ -1,9 +1,9 @@
-# Highlite Example Plugin Template
+# RyeLite Example Plugin Template
 **As of 9/18/2025 Highl1te Development has been paused indefinitely**
-A template repository for creating plugins for the HighLite client. This template showcases the basic structure, lifecycle methods, and how to use static resources like HTML, CSS, images, and audio files.
+A template repository for creating plugins for the RyeLite client. This template showcases the basic structure, lifecycle methods, and how to use static resources like HTML, CSS, images, and audio files.
 
 > **📋 This is a Template Repository**  
-> Use this template to quickly create your own HighLite plugin by clicking the "Use this template" button on GitHub, or generate a new repository from this template.
+> Use this template to quickly create your own RyeLite plugin by clicking the "Use this template" button on GitHub, or generate a new repository from this template.
 
 ## Getting Started
 
@@ -67,7 +67,7 @@ Example-Plugin/
 
 ### Plugin Configuration
 
-The main plugin class extends the base `Plugin` class from `@highlite/plugin-api`:
+The main plugin class extends the base `Plugin` class from `@ryelite/core`:
 
 ```typescript
 class ExamplePlugin extends Plugin {
@@ -170,14 +170,14 @@ To customize this template for your own plugin:
 
 ## Testing Plugins
 
-Testing your plugin locally is essential before publishing to the Plugin Hub. HighLite provides a convenient way to test plugins without going through the remote distribution process.
+Testing your plugin locally is essential before publishing to the Plugin Hub. RyeLite provides a convenient way to test plugins without going through the remote distribution process.
 
 ### Local Testing Setup
 
-1. **Clone HighLiteDesktop**:
+1. **Clone RyeLiteDesktop**:
    ```bash
-   git clone https://github.com/Highl1te/HighLiteDesktop.git
-   cd HighLiteDesktop
+   git clone https://github.com/ash-of-the-meadow/RyeLiteDesktop.git
+   cd RyeLiteDesktop
    ```
 
 2. **Build your plugin**:
@@ -188,14 +188,14 @@ Testing your plugin locally is essential before publishing to the Plugin Hub. Hi
    ```
 
 3. **Copy the built plugin**:
-   Copy your built plugin file to the HighLite plugins directory:
+   Copy your built plugin file to the RyeLite plugins directory:
    ```bash
-   cp dist/ExamplePlugin.js /path/to/HighLiteDesktop/src/renderer/client/plugins/
+   cp dist/ExamplePlugin.js /path/to/RyeLiteDesktop/src/renderer/client/plugins/
    ```
 
 ### Testing Guidelines
 
-- **Plugin Location**: Place any built plugin (e.g., `PluginName.js`) in `HighliteDesktop/src/renderer/client/plugins/`
+- **Plugin Location**: Place any built plugin (e.g., `PluginName.js`) in `RyeLiteDesktop/src/renderer/client/plugins/`
 - **Automatic Loading**: Plugins in this directory are automatically loaded by the client
 - **Name Conflicts**: If testing an existing Plugin Hub plugin, temporarily use a different name to avoid conflicts with the remotely pulled version
 - **Hot Reloading**: After making changes, rebuild your plugin and replace the file in the plugins directory
@@ -204,15 +204,15 @@ Testing your plugin locally is essential before publishing to the Plugin Hub. Hi
 
 1. Make changes to your plugin code
 2. Run `yarn build` to create the updated plugin file
-3. Copy the new build to the HighLite plugins directory
-4. Restart HighLite to load the updated plugin
+3. Copy the new build to the RyeLite plugins directory
+4. Restart RyeLite to load the updated plugin
 5. Test your plugin functionality
 6. Repeat as needed
 
 ### Debugging Tips
 
 - Use `this.log()` method in your plugin for debugging output
-- Check the HighLite console for any error messages
+- Check the RyeLite console for any error messages
 - Verify your plugin follows the correct lifecycle methods (`init()`, `start()`, `stop()`)
 - Ensure all static resources are properly bundled and accessible
 
