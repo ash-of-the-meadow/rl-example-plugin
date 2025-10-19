@@ -1,5 +1,4 @@
 # RyeLite Example Plugin Template
-**As of 9/18/2025 Highl1te Development has been paused indefinitely**
 A template repository for creating plugins for the RyeLite client. This template showcases the basic structure, lifecycle methods, and how to use static resources like HTML, CSS, images, and audio files.
 
 > **📋 This is a Template Repository**  
